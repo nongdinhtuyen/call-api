@@ -39,7 +39,7 @@ class Menu extends Component {
         return (
             <div className="container-fuild">
                 <nav className="navbar navbar-expand-lg bg-light  mb-4">
-                    <a className="navbar-brand">Navbar</a>
+                    <Link to='/' className="navbar-brand">Navbar</Link>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             

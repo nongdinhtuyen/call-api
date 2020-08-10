@@ -20,6 +20,20 @@ class ProductListPage extends Component {
             })
         })
     }
+
+
+    onDelete = id => {
+        var {products} = this.state
+        var a = []
+        callApi(`products/${id}`,"DELETE", null).then(res =>{
+            if(res.status === 200){
+                a = products.filter(product => product.id !== id)
+            }
+            this.setState({
+                products: a
+            })
+        })
+    }
     render() {
         var {products} = this.state;
         return (
@@ -44,6 +58,7 @@ class ProductListPage extends Component {
                     key={index}
                     product={product}
                     index={index}
+                    onDelete={this.onDelete}
                 />
             })
         }
