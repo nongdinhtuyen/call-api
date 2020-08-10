@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "meow1",
+      "price": 200,
+      "status": true
+    },
+    {
+      "id": 2,
+      "name": "meow2",
+      "price": 300,
+      "status": true
+    },
+    {
+      "id": 3,
+      "name": "meow3",
+      "price": 400,
+      "status": false
+    },
+    {
+      "name": "123123",
+      "price": "123",
+      "status": true,
+      "id": 4
+    },
+    {
+      "name": "123123",
+      "price": "33333",
+      "status": true,
+      "id": 5
+    },
+    {
+      "name": "123123",
+      "price": "5454",
+      "status": true,
+      "id": 6
+    }
+  ]
+}
